@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name           squaredle.app
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    bear theme for squaredle
 @author         gradiant
 ==/UserStyle== */
-@-moz-document domain("squaredle.app") {
+@-moz-document domain('squaredle.app') {
 	body {
 		--text-on-primary-color: white;
 		--opposite-text-on-primary-color: black;
@@ -88,8 +88,7 @@
 		--secondary-hover: hsl(0, 64%, 48%);
 		--secondary-active: hsl(0, 64%, 40%);
 		background-color: hsl(0, 0, 0, 0);
-		background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wideopenspaces.com%2Fwp-content%2Fuploads%2Fsites%2F3%2F2025%2F04%2FMan-Probably-Needs-A-Change-Of-Pants-After-Being-Chased-By-Charging-Polar-Bear.jpg&f=1&nofb=1&ipt=fe447362f26001f4d5cccea8f78c60307abb3d1d2228f419429d6362c5c8d1fc');
-		background-position: 30% 0%
+		background: url('https://raw.githubusercontent.com/gradiant18/beardle/refs/heads/main/polarbear.jpg?token=GHSAT0AAAAAADPPHHFQEWVEJK3AAMQRB5AI2I42RIQ')
 	}
 
 	body.blue {
@@ -356,7 +355,8 @@
 		display: flex;
 		flex-direction: column;
 		transform: translate3d(0, 0, 200px);
-		animation: .2s forwards slide-up
+		animation: .2s forwards slide-up;
+		border-radius: 25px
 	}
 
 	@keyframes slide-up {
