@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           squaredle.app
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.2.0
 @description    bear theme for squaredle
 @author         gradiant
 ==/UserStyle== */
@@ -73,11 +73,14 @@
 		--primary-shaded: hsl(0, 64%, 30%);
 		--secondary: hsl(180, 67%, 38%);
 		--secondary-active: hsl(180, 67%, 42%);
-		--secondary-hover: hsl(180, 67%, 34%)
+		--secondary-hover: hsl(180, 67%, 34%);
+		background: url('https://github.com/gradiant18/beardle/blob/main/bear3.jpg?raw=true');
+		background-size: cover;
+		background-position: center
 	}
 
 	body.teal {
-		--text-on-primary-color: #000;
+		--text-on-primary-color: #FFF;
 		--opposite-text-on-primary-color: black;
 		--primary: hsl(180, 67%, 38%);
 		--primary-active: hsl(180, 67%, 42%);
@@ -87,8 +90,10 @@
 		--secondary: #b82828;
 		--secondary-hover: hsl(0, 64%, 48%);
 		--secondary-active: hsl(0, 64%, 40%);
-		background-color: hsl(0, 0, 0, 0);
-		background: url('https://raw.githubusercontent.com/gradiant18/beardle/refs/heads/main/polarbear.jpg?token=GHSAT0AAAAAADPPHHFQEWVEJK3AAMQRB5AI2I42RIQ')
+		background: url('https://github.com/gradiant18/beardle/blob/main/polarbear.jpg?raw=true');
+		background-size: cover;
+		background-position-x: left;
+		background-position-y: center
 	}
 
 	body.blue {
@@ -4699,7 +4704,7 @@
 	}
 
 	.kofitext a {
-		text-decoration: none: important
+		text-decoration: none: !important
 	}
 
 	.kofitext a: hover {
@@ -4773,7 +4778,7 @@
 	}
 
 	#outerContainer {
-		
+
 		display: flex;
 		justify-content: center;
 		align-items: stretch;
@@ -4786,16 +4791,21 @@
 	#outerContainer > #wordList:not(.popup) {
 		border-radius: 25px;
 		background-color: #424242C9;
-		/*box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);*/
-		padding: 1.5em;
+		box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+		border-width: thick;
+		border-color: var(--primary);
+		border-style: double;
+		padding: 1.2em;
 		overflow-y: auto;
 		margin: 0 !important;
 	}
 
 	@media (min-width: 700px) {
 		#outerContainer > main {
-			flex: 1 1 500px;
-			max-width: 550px;
+			flex: 1 1 450px;
+			max-width: 450px;
+			max-height: 60%;
+			top: 15%;
 		}
 
 		#outerContainer > #wordList:not(.popup) {
@@ -4807,5 +4817,11 @@
 
 	main {
 		min-height: auto;
+	}
+	.viewport {
+		display: none !important
+	}
+	#belowBoard {
+		max-height: 0px
 	}
 }
